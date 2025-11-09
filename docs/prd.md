@@ -23,6 +23,29 @@ The primary goals of this project are to:
   - the entire infra should be deployable via Bicep templates
   - KISS
 
+## Non-functional requirements
+The usual suspects:
+- Security
+- Performance
+- Usability
+- OSS
+- Maintainability - crap AI code is a no-go (except for FE)
+
+## UI and Design
+TBD
+- Clean, simple
+- minimal clicks to get to the core data.
+Interaction flow: login, config, dashboard
+Core views: login/welcome, dashboard
+Target: desktop-first browser (mobile later)
+
+## Technology Stack
+- Frontend: React (Vite)
+- Backend: Azure Functions (C#)
+- Database: None
+  - Perhaps later: localdb, or table storage whenever they make sense
+- Infrastructure: Bicep
+- GitHub Actions for CI/CD on Monorepo
 
 ---
 
