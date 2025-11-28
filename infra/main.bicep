@@ -10,7 +10,7 @@ param environmentName string
 param location string
 
 // Tags that should be applied to all resources.
-// 
+//
 // Note that 'azd-service-name' tags should be applied separately to service host resources.
 // Example usage:
 //   tags: union(tags, { 'azd-service-name': <service name in azure.yaml> })
@@ -23,3 +23,18 @@ resource rg 'Microsoft.Resources/resourceGroups@2022-09-01' = {
   location: location
   tags: tags
 }
+
+/**
+
+TODO:
+- Add RG
+- Add Static Web App - SKU Free
+- Add Function App
+  - Add Consumption Plan
+  - Add Storage Account - Standard LRS, Hot Tier
+- Add Application Insights (optionally, but why not?)
+
+For now, all here, but Azure Samples has plenty of good `core` modules to copy/paste.
+If too big, split into modules.
+
+*/
